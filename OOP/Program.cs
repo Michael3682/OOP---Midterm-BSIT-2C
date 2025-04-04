@@ -22,10 +22,10 @@ namespace HotelReservationSystem
 
                 // Show available rooms
                 Console.WriteLine("\nHere are our rooms:");
-                Console.WriteLine("1. Standard Room - [Max 2 Guests, PHP 240.00]");
-                Console.WriteLine("2. Suite Room - [Max 4 Guests, PHP 400.00]");
-                Console.WriteLine("3. Deluxe Room - [Max 4 Guests, PHP 600.00]");
-                Console.WriteLine("4. Luxury Room - [Max 6 Guests, PHP 800.00]");
+                Console.WriteLine("1. Standard Room - (PHP 240.00/night, Max guests - 2)");
+                Console.WriteLine("2. Suite Room - (PHP 400.00/night, Max guests - 4)");
+                Console.WriteLine("3. Deluxe Room - (PHP 600.00/night, Max guests - 4)");
+                Console.WriteLine("4. Luxury Room - (PHP 800.00/night, Max guests - 6)");
 
                 // Choose room type
                 Console.Write("\nChoose room number - ");
@@ -36,7 +36,7 @@ namespace HotelReservationSystem
 
                 // Get number of nights
                 Console.Write("\nNumber of night/s you plan to stay? - ");
-                while (!int.TryParse(Console.ReadLine(), out numberOfNights) || numberOfNights <= 0)
+                while (!int.TryParse(Console.ReadLine(), out numberOfNights))
                 {
                     Console.Write("Please enter a valid number of night/s: ");
                 }
