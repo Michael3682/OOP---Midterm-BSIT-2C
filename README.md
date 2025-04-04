@@ -1,10 +1,10 @@
-#BSIT 2C - Hotel Reservation System
+# BSIT 2C - Hotel Reservation System
 
 A simple console-based Hotel Reservation System built using **C#** and **Object-Oriented Programming** principles like inheritance, encapsulation, and polymorphism. It allows users to select a room type, input their name and length of stay, and calculates the total cost based on room type.
 
 ---
 
-##OOP Implementation
+## OOP Implementation
 
 This project follows **Object-Oriented Programming** principles, ensuring clear organization and maintainability:
 
