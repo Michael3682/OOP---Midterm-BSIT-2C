@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace HotelReservationSystem
 {
@@ -12,7 +12,15 @@ namespace HotelReservationSystem
         public string GuestName
         {
             get { return guestName; }
-            set { guestName = value ?? throw new ArgumentNullException("Guest name cannot be null"); }
+            set {
+                if (string.IsNullOrWhiteSpace(value)) {
+                    Console.WriteLine("Guest name is empty. Defaulting to 'Guest'.");
+                    guestName = "Guest";
+                }
+                else {
+                    guestName = value;
+                }
+            }
         }
 
         public int NumberOfNights
@@ -20,11 +28,13 @@ namespace HotelReservationSystem
             get { return numberOfNights; }
             set
             {
-                if (value <= 0)
-                {
-                    throw new ArgumentException("Number of nights must be positive.");
+                if (value <= 0) {
+                    Console.WriteLine("Invalid number of nights. Setting to 1 night by default.");
+                    numberOfNights = 1;
                 }
-                numberOfNights = value;
+                else {
+                    numberOfNights = 1;
+                }
             }
         }
 
