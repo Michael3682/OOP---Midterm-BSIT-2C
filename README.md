@@ -77,3 +77,11 @@ This project follows **Object-Oriented Programming** principles, ensuring clear 
 - No database is used—reservations are stored temporarily in memory.
 
 ---
+
+## Created By
+
+BSIT - 2C | 4-J
+  - Bacaran, Jade
+  - Ferrer, Jay Francis
+  - Maranga, Michael Josh
+  - Pardillo, John Michael
